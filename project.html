@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- awal navbar -->
+    <nav>
+        <div class="left-side">
+            <img src="assets/logo.png">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+    
+    <!-- form -->
+<div class="isi">
+    <div class="satu">
+        <div class="form-control">
+            <div class="title">
+                <h2>ADD PROJECT</h2>
+            </div>
+            <form onsubmit="addProject(event)">
+                <div class="name">
+                    <label for="nama">Project Name</label>
+                    <input type="text" id="nama">
+                </div>
+                
+                <div class="input-date">
+                    <div class="start-date">
+                        <label for="StartDate">Start Date</label>
+                        <input type="date" id="StartDate">
+                    </div>
+            
+                    <div class="end-date">
+                        <label for="EndDate">End Date</label>
+                        <input type="date" id="EndDate">
+                    </div>
+                </div>
+        
+                <div class="Message">
+                    <label for="Message">Description</label>
+                    <textarea id="Message"></textarea>
+                </div>
+    
+                <div class="option">
+                    <div class="right-side">
+                        <div class="satu">
+                            <input type="checkbox" id="NodeJs" value="Node Js">
+                            <label for="NodeJs">Node Js</label>
+                        </div>
+                        <div class="dua">
+                            <input type="checkbox" id="ReactJs" value="React Js">
+                            <label for="ReactJs">React Js</label>
+                        </div>
+                    </div>
+    
+                    <div class="left-side">
+                        <div class="tiga">
+                            <input type="checkbox" id="NextJs" value="Next Js">
+                            <label for="NextJs">Next Js</label>
+                        </div>
+                        <div class="dua">
+                            <input type="checkbox" id="TypeScript" value="TypeScript">
+                            <label for="TypeScript">TypeScript</label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="Upload">
+                    <label>Upload Image</label>
+                    <div class="input-blog-image-group">
+                      <label for="input-blog-image">
+                        <p>Attach File</p>
+                        <img src="assets/file.png" alt="file" />
+                      </label>
+                      <input type="file" id="input-blog-image" hidden />
+                    </div>
+                  </div><div class="button-group">
+                    <button type="button" onclick="addProject()">Submit</button>
+                  </div>
+                  <div>
+                </div>     
+            </form>    
+        </div>
+    
+        <br><br>
+    </div>
+ 
+     <div class="dua">
+         <div class="display-project">
+             <h1>MY PROJECT</h1>
+                <div class="projects" id="projects">
+            
+                    <div class="list-project">
+                        <div class="header">
+                        <a href="project-detail.html"><img src="assets/a.jpg" alt="" width="100%"></a>
+                        <p> <b> Dumbways Mobile App - 2022</b></p>
+                        <small>durasi :  3 bulan</small>
+                        </div>
+                        <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,</p>
+                        <p class="content-awesome">
+                            <i class="fab fa-google-play"></i>
+                            <i class="fab fa-android"></i>
+                            <i class="fab fa-java"></i>
+                        </p>
+                        </div>
+                        <div class="footer">
+                        <div class="edit">
+                            <a href="#">edit</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">delete</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="list-project">
+                        <div class="header">
+                        <a href="project-detail.html"><img src="assets/a.jpg" alt="" width="100%"></a>
+                        <p> <b> Dumbways Mobile App - 2022</b></p>
+                        <small>durasi :  3 bulan</small>
+                        </div>
+                        <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,</p>
+                        <p class="content-awesome">
+                            <i class="fab fa-google-play"></i>
+                            <i class="fab fa-android"></i>
+                            <i class="fab fa-java"></i>
+                        </p>
+                        </div>
+                        <div class="footer">
+                        <div class="edit">
+                            <a href="#">edit</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">delete</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="list-project">
+                        <div class="header">
+                        <a href="project-detail.html"><img src="assets/a.jpg" alt="" width="100%"></a>
+                        <p> <b> Dumbways Mobile App - 2022</b></p>
+                        <small>durasi :  3 bulan</small>
+                        </div>
+                        <div class="content">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,orem ipsum dolor, sit amet consectetur adipisicing elit. Quidem sint et quibusdam nihil,</p>
+                        <p class="content-awesome">
+                            <i class="fab fa-google-play"></i>
+                            <i class="fab fa-android"></i>
+                            <i class="fab fa-java"></i>
+                        </p>
+                        </div>
+                        <div class="footer">
+                        <div class="edit">
+                            <a href="#">edit</a>
+                        </div>
+                        <div class="delete">
+                            <a href="#">delete</a>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+         </div>
+     </div>
+</div>
+    <!-- akhir form -->
+    <script src="project.js"></script>
+</body>
+</html>

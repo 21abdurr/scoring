@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color: #e3e7eb;">
+<!-- awal navbar     -->
+<nav>
+
+    <div class="left-side">
+        <img src="assets/logo.png">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">My Project</a></li>
+        </ul>
+    </div>
+
+    <div class="right-side">
+        <a href="contact.html">Contact Me</a>
+    </div>
+</nav>
+<!-- akhir navbar     -->
+
+
+<div class="form-control">
+    <div class="title">
+        <h2>GET IN TOUCH</h2>
+    </div>
+    <form action="">
+        <div class="name">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama">
+        </div>
+
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+
+        <div class="phone">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone">
+        </div>
+
+        <div class="subject">
+            <label for="subject">Subject</label>
+            <select name="" id="subject">
+                <option hidden></option>
+                <option>I'm Hiring</option>
+                <option>Let's Collaboration</option>
+                <option>Let's Talk</option>
+            </select>
+        </div>
+
+        <div class="Message">
+            <label for="Message">Your Message</label>
+            <textarea id="Message"></textarea>
+        </div>
+        <div>
+            <button onclick="submitForm()" type="button"> submit</button>
+        </div>     
+    </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

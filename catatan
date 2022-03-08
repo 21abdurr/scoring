@@ -1,0 +1,19 @@
+
+let nodeJs = document.getElementById('nodejs-box').value
+
+let tech = " "
+
+if (nodeJs == true){
+    tech += '<img src="assets/nodejs.png" >'
+}
+if (reactJs == true){
+    tech += '<img src="assets/reactjs.png" >'
+}
+if (typescript == true){
+    tech += '<img src="assets/typescript.png" >'
+}
+
+            ${projects[i].inputSkill[0]}
+            ${projects[i].inputSkill[1]}
+            ${projects[i].inputSkill[2]}
+            ${projects[i].inputSkill[3]}
