@@ -9,26 +9,6 @@ function addProject() {
     let Desc    = document.getElementById('Message').value
     let inputSkill = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(item => item.value); 
 
-
-    // let nodeJs = document.getElementById('NodeJs').value
-    // let reactJs = document.getElementById('ReactJs').value
-    // let nextJs = document.getElementById('NextJs').value
-    // let typescript = document.getElementById('TypeScript').value
-
-    // let tech = " "
-
-    // if (nodeJs == true){
-    //     tech += '<img src="assets/nodejs.jpg" >'
-    // }
-    // if (reactJs == true){
-    //     tech += '<img src="assets/reactjs.png" >'
-    // }
-    // if (nextJs == true){
-    //     tech += '<img src="assets/typescript.png" >'
-    // }
-    // if (typescript == true){
-    //     tech += '<img src="assets/typescript.png" >'
-    // }
     
     let images = document.getElementById('input-blog-image')
     images = URL.createObjectURL(images.files[0]) ; 
@@ -147,10 +127,10 @@ function renderProject () {
         <div class="content">
         <p>${projects[i].Desc}</p>
         <p class="content-awesome">
-            ${projects[i].inputSkill[0]}
-            ${projects[i].inputSkill[1]}
-            ${projects[i].inputSkill[2]}
-            ${projects[i].inputSkill[3]}
+            <i class="${projects[i].inputSkill[0]}"></i>
+            <i class="${projects[i].inputSkill[1]}"></i>
+            <i class="${projects[i].inputSkill[2]}"></i>
+            <i class="${projects[i].inputSkill[3]}"></i>
         </p>
         
         </div>
